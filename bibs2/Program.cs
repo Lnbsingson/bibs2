@@ -8,7 +8,7 @@ namespace bibs2
     {
         static void Main(string[] args)
         {
-
+            string resultpath = @"C:\Users\lowel\source\repos\bibs2\bibs2\bin\Debug\netcoreapp3.1\numberres";
             int result = 0;
             int count = 0;
             try
@@ -49,6 +49,7 @@ namespace bibs2
                     }
                     Console.WriteLine(result);
                 }
+                File.WriteAllTextAsync(resultpath, result.ToString());
             }
             catch (Exception e)
             {
