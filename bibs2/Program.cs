@@ -13,8 +13,7 @@ namespace bibs2
             int count = 0;
             try
             {
-                // Create an instance of StreamReader to read from a file.
-                // The using statement also closes the StreamReader.
+                
                 using (StreamReader sr = new StreamReader("Numbers.txt"))
                 {
                     string line;
@@ -53,7 +52,7 @@ namespace bibs2
             }
             catch (Exception e)
             {
-                // Let the user know what went wrong.
+               
                 Console.WriteLine("The file could not be read:");
                 Console.WriteLine(e.Message);
             }
